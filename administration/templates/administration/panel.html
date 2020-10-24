@@ -1,0 +1,29 @@
+{% extends 'administration/base-admin.html' %}
+{% load static %}
+{% block content %}
+<h2>EVENTOS</h2>
+<table>
+    <tr>
+        <th class="item-th">nombre del evento</th>
+        <th class="item-th">lugar</th>
+        <th class="item-th">fecha</th>
+        <th class="item-th">hora</th>
+        <th class="item-th">precio</th>
+    </tr>
+    {% for p in eventos %}
+    <tr>
+        <td>{{p.nombre}}</td>
+        <td>{{p.lugar}}</td>
+        <td>{{p.fecha}}</td>
+        <td>{{p.hora}}</td>
+        <td>{{p.precio}}</td>
+        <th>
+            <a href="{% url 'modify' p.id  %}"></a>
+        </th>
+    </tr>
+    
+</table>
+{% endfor %}
+
+{% endblock %}
+

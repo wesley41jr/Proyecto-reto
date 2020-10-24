@@ -1,0 +1,423 @@
+/*------------------Estilos generales-------------*/
+body{
+	font-family: 'Titillium Web', sans-serif;
+	padding: 0;
+	margin: 0;
+    width: auto;
+}
+h1{
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 80px;
+}
+h2{
+	font-size: 48px;
+	margin-bottom: 38px;
+}
+p{
+	font-size: 20px;
+	color: #999999;
+	line-height: 1.8;
+	margin-bottom: 0;
+}
+/*------------------Estilos del menu-------------*/
+.navbar{
+	background:  #007bff;
+	box-shadow: 0 2px 4px 0 rgba(0,0, .05);
+	min-height: 100px;
+	color: #fff;
+}
+.nav-link {color: #fff;}
+.nav-link:hover {
+	background: #353535;
+	color: #1485e8;
+}
+.logo-brand{
+	max-height: 100px;
+	width: 277px;
+}
+.navbar-toggler {font-size: 25px;}
+.navbar-toggler:focus {outline: none;}
+/*------------------Estilos del banner-------------*/
+#banner{
+    width: 100%;
+    margin-bottom: 50px;
+}
+#hero{
+    width: 100%;
+	height: auto;
+	min-height: auto;
+	color: #fff;
+}
+#hero img{width: 100%;}
+#hero p{color: #ffffff;}
+/*------------------Estilos seccion nosotros-------------*/
+#nosotros {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.container-fluid {
+    padding-bottom: 1.5px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+#nosotros h2 {color: #1485e8;}
+#nosotros p {
+    color: black;
+    font-size: 20px;
+}
+.content-center {
+	max-width: 802px;
+	text-align: center;
+    color: #007bff;
+    margin: 0 auto;
+}
+
+/*------------------Estilos seccion servicios-------------*/
+.services {
+    width: 100%;
+    background: #353535e1;
+    margin-bottom: 50px;
+}
+.content-services {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.content-services h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+.img-area {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.img-area h5{
+    color: white;
+    font-size: 25px;
+}
+.single-img {padding: 0 20px 20px;}
+.single-img img {
+	width: 100%;
+	max-width: 315px;
+    height: 315px;
+    opacity: .6;
+}
+.single-img img:hover{
+    opacity: 1;
+	transition: .9s;
+}
+/*------------------Estilos seccion eventos-------------*/
+.our-event {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.content-event {
+    width: 100%;
+    text-align: center;
+}
+.content-event h2 {
+    color: #1485e8;
+    margin-bottom: 30px;
+}
+.area {
+    display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.single img {
+    width: 100%;
+	max-width: 315px;
+    height: 315px;
+}
+.single {padding: 0 20px 20px;}
+
+
+/*------------------Estilos del footer-------------*/
+.main-foot {
+    background: #353535;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+	width: 100%;
+	height: 78px;
+	padding: 0;
+}
+.main-foot h3 {
+	text-align: left;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 13px;
+    box-sizing: border-box;
+}
+.icon-foot {
+    text-align: right;
+    margin: 0 auto;
+    position: relative;
+    bottom: 40px;
+    right: 100px;
+    font-size: 20px;
+}
+.icon-social {
+	margin-right: 10px;
+	color:white;
+}
+.icon-social:hover{
+	color: #007bff;
+}
+
+
+
+
+/*--------------------ESTILOS DEL LOGIN----------------*/
+
+.formulario{
+   padding: 10px;
+   width:  30%;
+   margin: 0 auto;
+   height: auto;
+   margin-top: 30px;
+   border-radius: 2%;
+   margin-bottom: 300px;
+}
+.formulario h1{
+   text-align: center;
+   color: #1485e8;
+   font-size: 40px;
+}
+.contenedor{
+	width: 100%;
+	padding: 15px;
+
+}
+input[type="text"],
+input[type="password"]{
+   font-size: 20px;
+   width: 82%;
+   padding: 10px;
+   border: none;
+}
+
+.input-contenedor{
+   margin-bottom: 15px;
+   border: 2px solid #1485e8;
+
+}
+.icon{
+   min-width: 50px;
+   text-align: center;
+   color: #353535;
+   font-size: 25px;
+}
+.button{
+   border: none;
+   width: 100%;
+   color: white;
+   font-size: 20px;
+   background: #1485e8;
+   padding: 15px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.button:hover{
+   background: #353535;
+   color: #006ba1;
+}
+p{
+   text-align: center;
+   font-size: 15px;
+}
+.link{
+   text-decoration: none;
+   color: #1485e8;
+   font-weight:  600;
+}
+.link:hover{
+   color: black;
+}
+
+/*---------------------Estilos del registro------------------*/
+.container-registro {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	color: #353535;
+}
+.form-title {
+	padding-bottom: 15px;
+}
+.signup-form-container {
+	width: 50%;
+	margin: 157px auto;
+}
+.form-header {
+	text-align: center;
+}
+.how-register {
+	text-align: left;
+}
+.option {
+	padding-left: 15px;
+}
+.form-footer {
+	text-align: center;
+
+}
+.btn-info {
+	background: #1485e8;
+	margin-top: 10px;
+}
+/*---------------------Estilos del Contacto------------------*/
+.contact {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #1485e8;
+    margin-top: -24px;
+}
+.container-contact {
+    width: 50%;
+    height: 700px;
+    margin: 25px auto ;
+    text-align: center;
+    background: #353535d2;
+    padding: 50px;
+    color: white;
+
+}
+
+.form-title {
+    color: #1485e8;
+}
+.contact-form {
+    width: 100%;
+    height: 100px;
+}
+.contact-row {
+    width: 100%;
+}
+.input-group {
+    width: 100%;
+}
+/*---------------estilos responsivos-------------*/
+
+@media(max-width: 768px){
+
+
+    /*---------------login-------------*/
+    .input-contenedor{
+    margin-bottom: 15px;
+    width: auto;
+    border-radius: 3px solid #aaa;
+    }
+    .button{
+    border: none;
+    width: 96%;
+    color: white;
+    font-size: 20px;
+    background: #1485e8;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .formulario {
+     background: #fff;
+     margin-top: 30px;
+     padding: 3px;
+     border: 3px solid  #1485e8;
+     width: 80%;
+     margin-bottom: 62px;
+     }
+  .icon-foot {
+     bottom: 0px;
+     }
+     input[type="text"],
+     input[type="password"]{
+        font-size: 20px;
+        width: 60%;
+        padding: 0;
+     border: none;
+     margin-bottom: 5px;}
+     .main-foot {height: 122px;}
+
+}
+}
+/*---------------estilos responsivos-------------*/
+
+@media(max-width: 768px){
+
+    /*---------------registro-------------*/
+	.container-registro {
+		margin: 100px auto;
+	}
+	.signup-form-container {
+		width: 50%;
+		margin: 100px auto;
+	}
+	.container-e img {
+		width: 100%;
+    }
+
+
+
+    /*---------------login-------------*/
+    .input-contenedor{
+    margin-bottom: 15px;
+    width: auto;
+    border-radius: 3px solid #aaa;
+    }
+    .button{
+    border: none;
+    width: 96%;
+    color: white;
+    font-size: 20px;
+    background: #1485e8;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .formulario {
+     background: #fff;
+     margin-top: 30px;
+     padding: 3px;
+     border: 3px solid  #1485e8;
+     width: 80%;
+     margin-bottom: 62px;
+     }
+  .icon-foot {
+     bottom: 0px;
+     }
+     input[type="text"],
+     input[type="password"]{
+        font-size: 20px;
+        width: 60%;
+        padding: 0;
+     border: none;
+     margin-bottom: 5px;}
+     .main-foot {height: 122px;}
+}
+@media(min-width: 768px){
+    nav{
+        flex-direction: column;
+        color: white;
+    }
+
+}
+

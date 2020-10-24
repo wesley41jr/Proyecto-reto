@@ -1,0 +1,61 @@
+{% extends 'administration/base-admin.html' %}
+{% load static %}
+{% block content %}
+<h2>EVENTOS</h2>
+<table>
+    <tr>
+        <th class="item-th">nombre del evento</th>
+        <th class="item-th">lugar</th>
+        <th class="item-th">fecha</th>
+        <th class="item-th">hora</th>
+        <th class="item-th">precio</th>
+    </tr>
+    {% for p in eventos %}
+    <tr>
+        <td>{{p.nombre}}</td>
+        <td>{{p.lugar}}</td>
+        <td>{{p.fecha}}</td>
+        <td>{{p.hora}}</td>
+        <td>{{p.precio}}</td>
+    </tr>
+    <td>
+        <button type="button" class="btn btn-primary" data-toggle="modal"
+                data-target="#exampleModal">
+            <a href="{% url 'modify' p.id %}">Modificar</a>
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal"
+                data-target="#exampleModal">
+            Eliminar
+        </button>
+    </td>
+    <tr>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <a href="{% url 'delete' p.id %}">Eliminar</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</table>
+{{mensaje}}
+{% endfor %}
+
+{% endblock %}

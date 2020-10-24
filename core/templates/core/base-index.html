@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'core/css/style.css'%}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'core/lib/bootstrap-4.5.2-dist/css/bootstrap.min.css'%}">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'core/img/LOGOcorpicitti.png' %}" class="logo-brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home'%}">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home'%}#nosotros">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home'%}#services">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'ListarEventos'%}">EVENTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact'%}">CONTACTO</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block content %}
+
+<section id="banner">
+    <div id="hero">
+        <img src="{% static 'core/img/WhatsApp-Image-2020-02-21-at-12.35.48-1.png' %}" alt="">
+    </div>
+</section>
+
+<section id="nosotros">
+    <div class="container-fluid">
+        <div class="content-center">
+            <h2><b>NOSOTROS</b></h2>
+            <p><b>MISION</b></p>
+            <p>Impulsar el desarrollo y progreso del Ecuador, a través de actividades/proyectos de ciencia,
+                tecnología e innovación sinérgicamente con los actores del ecosistema de ciencia, tecnología e
+                innovación del país, es decir con la acedemia, sector productivo, sector público y sector social. <br>
+            </p>
+            <p><b><br> VISIÓN</b></p>
+            <p style="padding-bottom: 25px;">Dentro de los próximos 5 años nos proyectamos como la comunidad de ciencia,
+                tecnología e innovación más
+                grande del país,
+                líder y referente del progreso y desarrollo a través de la creatividad y el conocimiento de los
+                ecuatorianos.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="services" id="services" >
+    <div class="content-services">
+        <h2><b>NUESTROS SERVICIOS</b></h2>
+        <div class="img-area">
+            <div class="single-img"><img src="{% static 'core/img/WhatsApp-Image-2019-10-17-at-21.05.47-2.jpeg' %}" alt="">
+                <h5>CONCURSOS Y EVENTOS</h5><
+            </div>
+            <div class="single-img"><img src="{% static 'core/img/WhatsApp-Image-2020-02-21-at-12.35.48-1.jpeg' %}" alt="">
+                <h5>CONSULTORIAS</h5><
+            </div>
+            <div class="single-img"><img src="{% static 'core/img/prueba.jpeg' %}" alt="">
+                <h5>CAPACITACIONES</h5><
+            </div>
+            <div class="single-img"><img src="{% static 'core/img/gerencia-participativa.jpg' %}" alt="">
+                <h5>PRE-INCUBACIONES</h5><
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-event">
+    <div class="content-event">
+        <h2><b>NUESTROS EVENTOS</b></h2>
+        <div class="area">
+            <div class="single "><img src="{% static 'core/img/eventos1.jpg' %}" alt="">
+                <a href=""><h5>Sesión Informativa 1</h5></a>
+            </div>
+            <div class="single "><img src="{% static 'core/img/eventos1.jpg' %}" alt="">
+                <a href=""><h5>Sesión Informativa 2</h5></a>
+            </div>
+            <div class="single "><img src="{% static 'core/img/nasa.jpg' %}" alt="">
+                <a href=""><h5> NASA Space Apps Guayaquil 2019</h5></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+<footer class="main-foot">
+    <div class="conatiner-footer">
+        <h3 class="footer-title">
+            Corporación de ciencia, tecnología e innovación del Ecuador</h3>
+        <div class="icon-foot">
+            <a href=""><i class="fab fa-twitter-square icon-social"></i></a>
+            <a href=""><i class="fab fa-twitter-square icon-social"></i></a>
+            <a href=""><i class="fab fa-youtube icon-social"></i></a>
+            <a href=""><i class="fab fa-linkedin-in icon-social"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="{% static 'core/lib/bootstrap-4.5.2-dist/js/jquery-3.5.1.slim.min.js'%}"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="{% static 'core/lib/bootstrap-4.5.2-dist/js/popper.min.js'%}"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="{% static 'core/lib/bootstrap-4.5.2-dist/js/bootstrap.min.js'%}"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>

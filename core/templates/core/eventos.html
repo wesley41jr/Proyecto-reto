@@ -1,0 +1,54 @@
+{% extends 'core/base-index.html' %}
+{% block title %}Eventos{% endblock %}
+{% load static %}
+{% block content %}
+<h2>Eventos</h2>
+{{mensaje}}
+<table>
+    <tr>
+        <th class="item-th">nombre del evento</th>
+        <th class="item-th">lugar</th>
+        <th class="item-th">fecha</th>
+        <th class="item-th">hora</th>
+        <th class="item-th">precio</th>
+    </tr>
+    {% for p in eventos %}
+    <tr>
+        <td>{{p.nombre}}</td>
+        <td>{{p.lugar}}</td>
+        <td>{{p.fecha}}</td>
+        <td>{{p.hora}}</td>
+        <td>{{p.precio}}</td>
+    </tr>
+    <tr>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Registrarse
+        </button>
+
+    </tr>
+</table>
+{% endfor %}
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut enim explicabo itaque iusto
+                laboriosam laborum minus nihil nobis numquam, officiis perferendis possimus quidem quo soluta
+                suscipit velit vero voluptatum?
+            <table>
+                <form action="" method="post">
+                    {% csrf_token%}
+                    <table>
+                        {{form.as_table}}
+                    </table>
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Guardar">
+                </form>
+            </table>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

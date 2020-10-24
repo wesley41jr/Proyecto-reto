@@ -1,0 +1,17 @@
+{% extends 'administration/base-admin.html' %}
+{% load static %}
+{% block content %}
+
+<h2> modificar
+</h2>
+<table>
+    <form action="" method="post">
+        {% csrf_token%}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="reset" value="Limpiar">
+        <input type="submit" value="Modificarr">
+    </form>
+</table>
+{% endblock %}
